@@ -64,7 +64,11 @@ sudo python3 Xbee_host.py
 
 ## How program run
 
-1. First, I send a RPC call to mbed board, starting line dectction
+1. First, I send a RPC call to mbed board, starting line detection.
+2. After detection, I use PING to detect the obstacle, withing 70 cm it will stop and send a uart to PC, and it will send a RPC 'circle' to mbed.
+3. In circle, it will run two half circle to skip the obstacle, after first half, it will detect the wall and run the second circle.
+4. After circle, I send a RPC 'parking' and input the length, width and direction. For demo I use xbee to input /parking/run 5 5 west. 
+5. In the end, I use openMV to detect Apriltag, and it will run function 'calib' to trace the Apriltag. 
   
 ## Acknowledgements
 
