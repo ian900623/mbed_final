@@ -62,18 +62,9 @@ sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A 
 sudo python3 Xbee_host.py
 ```
 
-<!--
-## FAQ
+## How program run
 
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
--->
-
+1. First, I send a RPC call to mbed board, starting line dectction
   
 ## Acknowledgements
 
